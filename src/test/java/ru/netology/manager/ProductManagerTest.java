@@ -10,15 +10,15 @@ import ru.netology.repository.ProductRepository;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ProductManagerTest {
-    ProductRepository repository = new ProductRepository();
-    ProductManager manager = new ProductManager(repository);
+    private ProductRepository repository = new ProductRepository();
+    private ProductManager manager = new ProductManager(repository);
 
-    Product book1 = new Book(1, "Том Сойер", 10, "Марк Твен");
-    Product book2 = new Book(2, "Война и мир", 10, "Лев Толстой");
-    Product book3 = new Book(3, "Мастер и Маргарита", 10, "Михаил Булгаков");
-    Product smartphone1 = new Smartphone(4, "IPhone 11", 10, "Apple");
-    Product smartphone2 = new Smartphone(5, "IPhone 6", 10, "Apple");
-    Product smartphone3 = new Smartphone(6, "IPhone 12", 10, "Apple");
+    private Product book1 = new Book(1, "Том Сойер", 10, "Марк Твен");
+    private Product book2 = new Book(2, "Война и мир", 10, "Лев Толстой");
+    private Product book3 = new Book(3, "Мастер и Маргарита", 10, "Михаил Булгаков");
+    private Product smartphone1 = new Smartphone(4, "IPhone 11", 10, "Apple");
+    private Product smartphone2 = new Smartphone(5, "IPhone 6", 10, "Apple");
+    private Product smartphone3 = new Smartphone(6, "IPhone 12", 10, "Apple");
 
     @BeforeEach
     public void setUp() {
